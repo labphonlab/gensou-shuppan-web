@@ -1,0 +1,54 @@
+/* 言叢出版 サイト共通スタイル
+   音声学ライブラリのカバーと同じ配色・書体を使う。
+   叢書と版元のサイトが別物に見えないようにするため。 */
+:root{
+  --bg:#10161C; --panel:#161D25; --ink:#F2F0EA; --soft:#8A94A0;
+  --line:#243040; --accent:#3F9C82;
+  --survey:#C9A227; --methods:#3F9C82; --topics:#9179C4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;
+  line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(63,156,130,.35)}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+header.site{border-bottom:1px solid var(--line);padding:26px 0 22px;margin-bottom:44px}
+header.site .wrap{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.brand{font-family:"Shippori Mincho B1",serif;font-size:21px;letter-spacing:.14em;
+  color:var(--ink);border:0}
+.brand span{display:block;font-family:inherit;font-size:10px;letter-spacing:.34em;
+  color:var(--soft);margin-top:4px}
+nav.site{margin-left:auto;display:flex;gap:22px;font-size:13.5px}
+nav.site a{color:var(--soft);border:0}
+nav.site a:hover,nav.site a[aria-current]{color:var(--ink)}
+h1{font-family:"Shippori Mincho B1",serif;font-size:30px;font-weight:700;
+  margin:0 0 10px;letter-spacing:.02em;line-height:1.5}
+h2{font-family:"Shippori Mincho B1",serif;font-size:20px;font-weight:500;
+  margin:52px 0 14px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;font-weight:500;margin:30px 0 8px}
+.lead{color:var(--soft);font-size:15px;margin:0 0 38px}
+.vol{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 0;
+  border-bottom:1px solid var(--line)}
+.vol:last-child{border-bottom:0}
+.num{font-family:"Shippori Mincho B1",serif;font-size:26px;line-height:1;
+  color:var(--accent);padding-top:3px}
+.num.survey{color:var(--survey)} .num.topics{color:var(--topics)}
+.vt{font-size:17px;font-weight:500;margin:0 0 3px}
+.vs{color:var(--soft);font-size:13.5px;margin:0 0 8px}
+.meta{font-size:12.5px;color:var(--soft);display:flex;gap:16px;flex-wrap:wrap}
+.tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:2px;
+  background:var(--panel);color:var(--soft);border:1px solid var(--line)}
+.tag.live{color:var(--accent);border-color:rgba(63,156,130,.45)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--soft);font-weight:500;font-size:12.5px;letter-spacing:.06em;white-space:nowrap}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:3px;
+  padding:16px 20px;font-size:14px;color:var(--soft);margin:22px 0}
+.note b{color:var(--ink);font-weight:500}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;
+  background:var(--panel);padding:1px 6px;border-radius:2px;color:var(--ink)}
+footer.site{margin-top:76px;padding:26px 0 60px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--soft)}
+footer.site a{color:var(--soft)}
+@media(max-width:600px){h1{font-size:24px}.wrap{padding:0 18px}nav.site{gap:14px}}
