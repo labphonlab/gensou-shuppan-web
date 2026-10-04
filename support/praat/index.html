@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>『Praatで学ぶ音声研究の方法』サポート｜言叢出版</title>
+<meta name="description" content="『Praatで学ぶ音声研究の方法——測定・自動化・コーパス分析』（音声学ライブラリ 第1巻）の実習データ・公開スクリプト・正誤表・更新履歴。">
+<link rel="canonical" href="https://labphonlab.github.io/gensou-shuppan-web/support/praat/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="『Praatで学ぶ音声研究の方法』サポート｜言叢出版">
+<meta property="og:description" content="実習データ・公開スクリプト・正誤表・更新履歴。">
+<meta property="og:url" content="https://labphonlab.github.io/gensou-shuppan-web/support/praat/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+</head><body>
+<header class="site"><div class="wrap">
+<a class="brand" href="../../">言叢出版<span>GENSOU SHUPPAN</span></a>
+<nav class="site"><a href="../../onseigaku-library/">シリーズ</a><a href="../" aria-current="page">サポート</a></nav>
+</div></header>
+<main class="wrap">
+<h1>Praatで学ぶ音声研究の方法</h1>
+<p class="lead">測定・自動化・コーパス分析（音声学ライブラリ 第1巻）のサポートページです。実習データと公開スクリプトの入手先、正誤表、更新履歴を掲載します。</p>
+<p class="updated">最終更新：2026年10月4日</p>
+<nav class="toc" aria-label="このページの内容"><ol>
+<li><a href="#download">実習データとスクリプト</a></li>
+<li><a href="#start">最初にすること</a></li>
+<li><a href="#env">動作環境</a></li>
+<li><a href="#errata">正誤・既知の不具合</a></li>
+<li><a href="#history">更新履歴</a></li>
+<li><a href="#contact">お問い合わせ</a></li>
+</ol></nav>
+
+<section class="vol-support" id="download">
+<h2>実習データとスクリプト</h2>
+<table>
+<tr><th scope="row">実習データ</th><td><a href="../../dl/onseigaku-library-1-data.zip">実習データZIP</a>（約27 MB、パスワードなし）<br>
+本書の付属データ6フォルダ（<code>test_data</code>・<code>jp_vowels</code>・<code>en_jp_stops</code>・<code>spontaneous_sample</code>・<code>batch_100files</code>・<code>stimuli</code>）。すべて合成音声とTextGridです。CC BY 4.0</td></tr>
+<tr><th scope="row">公開スクリプト</th><td><a href="https://github.com/labphonlab/praat-book-scripts/releases/tag/v1.0.3">刊行時固定版 v1.0.3</a>（ZIPとSHA-256チェックサム）<br>
+最新版は<a href="https://github.com/labphonlab/praat-book-scripts">GitHubリポジトリ（main）</a>。本書のスクリプトの完全版と研究実務向けのスクリプト。MIT License</td></tr>
+</table>
+<p class="fine">実習データは研究のデータとして分析しないでください。スクリプトの動作確認と操作の練習のための合成音声です。</p>
+</section>
+
+<section class="vol-support" id="start">
+<h2>最初にすること</h2>
+<ol class="small">
+<li>上の表から実習データZIPをダウンロードし、展開する</li>
+<li>公開スクリプトの刊行時固定版（v1.0.3のZIP）をダウンロードし、展開する</li>
+<li>本書第1章の【実習1】に沿って作業用のプロジェクトフォルダを作り、1と2で展開したものを置く</li>
+</ol>
+</section>
+
+<section class="vol-support" id="env">
+<h2>動作環境</h2>
+<table>
+<tr><th scope="row">Praat</th><td>7.0.02（6.4.67でも動作を確認）。<a href="https://praat.org">Praatの公式サイト</a>から入手できます</td></tr>
+<tr><th scope="row">コマンドライン実行</th><td>Praat 7.0以降では、ファイルを書き出すスクリプトを <code>--FULL-TRUST</code> 付きで実行します（本書第1章1.5節）</td></tr>
+<tr><th scope="row">R</th><td>本書のデータ解析と図の作成に使用します（tidyverse・lme4・mgcvなど）</td></tr>
+</table>
+</section>
+
+<section class="vol-support" id="errata">
+<h2>正誤・既知の不具合</h2>
+<p class="small muted">現時点で報告はありません。</p>
+</section>
+
+<section class="vol-support" id="history">
+<h2>更新履歴</h2>
+<table class="log">
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.3：書籍掲載スクリプト4本のPitch分析を、本書の標準である <code>To Pitch (filtered autocorrelation)</code> に統一</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.2：<code>f0_trajectory_plot.praat</code> の軸ラベルの「%」が表示されない不具合を修正</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.1：図版スクリプトのPicture windowの単位をインチに修正（cmとしていた）、書籍掲載スクリプトを本文と一致させ、ライセンス表記をMIT Licenseに統一</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>実習データZIP：本書の付属データ6フォルダを収録して差し替え、パスワードを廃止（利用条件はCC BY 4.0）</td></tr>
+<tr><th scope="row">2026年9月27日</th><td>公開スクリプト v1.0.0：刊行時固定版を公開</td></tr>
+</table>
+<p class="fine">以前にダウンロードしたスクリプトやデータをお使いの場合は、最新版に置き換えてください。変更の詳細は、リポジトリの <a href="https://github.com/labphonlab/praat-book-scripts/blob/main/CHANGELOG.md">CHANGELOG.md</a> にあります。</p>
+</section>
+
+<section class="vol-support" id="contact">
+<h2>お問い合わせ</h2>
+<p>本文の誤り、スクリプトが動かない、配布物が開けないなどがありましたら、<a href="https://docs.google.com/forms/d/e/1FAIpQLSdLhgWZYnkLQAb0KRtTE2rfhNnPIqi91j2bmAsXGkMmW2fY2g/viewform?usp=pp_url&entry.782726827=%E3%80%8EPraat%E3%81%A7%E5%AD%A6%E3%81%B6%E9%9F%B3%E5%A3%B0%E7%A0%94%E7%A9%B6%E3%81%AE%E6%96%B9%E6%B3%95%E3%80%8F%EF%BC%88%E9%9F%B3%E5%A3%B0%E5%AD%A6%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%20%E7%AC%AC1%E5%B7%BB%EF%BC%89">お問い合わせフォーム（本書の書名が入力済み）</a>からお知らせください。確認のうえ、このページに掲載し、次の更新版で修正します。</p>
+<p class="fine">該当箇所（章と節、ページ、スクリプト名）と、お使いのPraatのバージョン・OSをお書き添えいただけると、確認が早くなります。</p>
+</section>
+</main>
+
+<footer class="site"><div class="wrap">
+言叢出版 — 音声学ライブラリ　<a href="../">シリーズ全体のサポート</a>
+</div></footer>
+</body></html>
