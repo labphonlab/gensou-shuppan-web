@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../assets/style.css">
-<style>.abridged td,.log td{overflow-wrap:anywhere}.abridged code,.log code{white-space:normal;overflow-wrap:anywhere}</style>
+<style>.abridged td,.log td{overflow-wrap:anywhere}.log code{white-space:normal;overflow-wrap:anywhere}.abridged code{font-size:.85em}</style>
 </head><body>
 <header class="site"><div class="wrap">
 <a class="brand" href="../../">言叢出版<span>GENSOU SHUPPAN</span></a>
@@ -48,26 +48,26 @@
 <h2>紙版で途中を省略したスクリプト</h2>
 <p class="small">紙版では、次の20本のスクリプトの途中を「（中略）」として省いています。省いたのは、出力ファイルの準備や後片付けなど本文で説明していない部分です。全文は電子版と、公開スクリプトの <code>book/</code> フォルダにあります（下のリンクから表示できます）。実際に動かすときは、公開スクリプトのファイルをお使いください。</p>
 <table class="abridged">
-<tr><th scope="row">第2章</th><td>Script 2.1　F0統計量の一括抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/pitch_stats_batch.praat"><code>book/pitch_stats_batch.praat</code></a></td></tr>
-<tr><th scope="row">第3章</th><td>Script 3.1　母音区間のF1・F2・F3の一括抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/formant_batch.praat"><code>book/formant_batch.praat</code></a></td></tr>
-<tr><th scope="row">第3章</th><td>Script 3.2　bandwidthで絞り込む抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/formant_bw_filter.praat"><code>book/formant_bw_filter.praat</code></a></td></tr>
-<tr><th scope="row">第4章</th><td>Script 4.2　スペクトログラムとTextGridのPDF一括出力<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/spectrogram_export_batch.praat"><code>book/spectrogram_export_batch.praat</code></a></td></tr>
-<tr><th scope="row">第5章</th><td>Script 5.1　評定者内の信頼性（ICC・κ）<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/reliability_intra.praat"><code>book/reliability_intra.praat</code></a></td></tr>
-<tr><th scope="row">第5章</th><td>Script 5.2　評定者間の境界一致率<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/reliability_inter.praat"><code>book/reliability_inter.praat</code></a></td></tr>
-<tr><th scope="row">第5章</th><td>Script 5.3　境界位置の差のCSV出力<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/boundary_diff_export.praat"><code>book/boundary_diff_export.praat</code></a></td></tr>
-<tr><th scope="row">第7章</th><td>Script 7.1　非流暢性の頻度の計測<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/disfluency_count.praat"><code>book/disfluency_count.praat</code></a></td></tr>
-<tr><th scope="row">第7章</th><td>Script 7.2　発話速度の一括計算<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/speech_rate_batch.praat"><code>book/speech_rate_batch.praat</code></a></td></tr>
-<tr><th scope="row">第8章</th><td>Script 8.4　エラー処理付きのバッチ処理<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/script_8_4_batch_full.praat"><code>book/script_8_4_batch_full.praat</code></a></td></tr>
-<tr><th scope="row">第8章</th><td>Script 8.5　メタデータの統合<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/metadata_merge.praat"><code>book/metadata_merge.praat</code></a></td></tr>
-<tr><th scope="row">第8章</th><td>Script 8.6　品質の自動チェック<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/qa_check.praat"><code>book/qa_check.praat</code></a></td></tr>
-<tr><th scope="row">第10章</th><td>Script 10.2　tier間の照合<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/10_2_tier_cross.praat"><code>book/10_2_tier_cross.praat</code></a></td></tr>
-<tr><th scope="row">第10章</th><td>Script 10.4　指定ラベルの持続時間の計測<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/10_4_duration_extract.praat"><code>book/10_4_duration_extract.praat</code></a></td></tr>
-<tr><th scope="row">第11章</th><td>Script 11.1　日本語母音の一括測定<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vowel_extractor.praat"><code>book/vowel_extractor.praat</code></a></td></tr>
-<tr><th scope="row">第13章</th><td>Script 13.1　VOT連続体の生成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vot_continuum.praat"><code>book/vot_continuum.praat</code></a></td></tr>
-<tr><th scope="row">第15章</th><td>Script 15.1　制約付きランダム化<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/randomize_stimuli.praat"><code>book/randomize_stimuli.praat</code></a></td></tr>
-<tr><th scope="row">第15章</th><td>Script 15.4　ExperimentMFCの結果をR用CSVに変換<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/mfc_to_r.praat"><code>book/mfc_to_r.praat</code></a></td></tr>
-<tr><th scope="row">第16章</th><td>Script 16.2　母音空間図の作成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vowel_space_plot.praat"><code>book/vowel_space_plot.praat</code></a></td></tr>
-<tr><th scope="row">第18章</th><td>Script 18.1　研究プロジェクトのフォルダ構成の生成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/create_research_project.praat"><code>book/create_research_project.praat</code></a></td></tr>
+<tr><th scope="row">第2章</th><td>Script 2.1　F0統計量の一括抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/pitch_stats_batch.praat"><code>pitch_stats_batch.praat</code></a></td></tr>
+<tr><th scope="row">第3章</th><td>Script 3.1　母音区間のF1・F2・F3の一括抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/formant_batch.praat"><code>formant_batch.praat</code></a></td></tr>
+<tr><th scope="row">第3章</th><td>Script 3.2　bandwidthで絞り込む抽出<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/formant_bw_filter.praat"><code>formant_bw_filter.praat</code></a></td></tr>
+<tr><th scope="row">第4章</th><td>Script 4.2　スペクトログラムとTextGridのPDF一括出力<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/spectrogram_export_batch.praat"><code>spectrogram_export_batch.praat</code></a></td></tr>
+<tr><th scope="row">第5章</th><td>Script 5.1　評定者内の信頼性（ICC・κ）<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/reliability_intra.praat"><code>reliability_intra.praat</code></a></td></tr>
+<tr><th scope="row">第5章</th><td>Script 5.2　評定者間の境界一致率<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/reliability_inter.praat"><code>reliability_inter.praat</code></a></td></tr>
+<tr><th scope="row">第5章</th><td>Script 5.3　境界位置の差のCSV出力<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/boundary_diff_export.praat"><code>boundary_diff_export.praat</code></a></td></tr>
+<tr><th scope="row">第7章</th><td>Script 7.1　非流暢性の頻度の計測<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/disfluency_count.praat"><code>disfluency_count.praat</code></a></td></tr>
+<tr><th scope="row">第7章</th><td>Script 7.2　発話速度の一括計算<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/speech_rate_batch.praat"><code>speech_rate_batch.praat</code></a></td></tr>
+<tr><th scope="row">第8章</th><td>Script 8.4　エラー処理付きのバッチ処理<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/script_8_4_batch_full.praat"><code>script_8_4_batch_full.praat</code></a></td></tr>
+<tr><th scope="row">第8章</th><td>Script 8.5　メタデータの統合<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/metadata_merge.praat"><code>metadata_merge.praat</code></a></td></tr>
+<tr><th scope="row">第8章</th><td>Script 8.6　品質の自動チェック<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/qa_check.praat"><code>qa_check.praat</code></a></td></tr>
+<tr><th scope="row">第10章</th><td>Script 10.2　tier間の照合<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/10_2_tier_cross.praat"><code>10_2_tier_cross.praat</code></a></td></tr>
+<tr><th scope="row">第10章</th><td>Script 10.4　指定ラベルの持続時間の計測<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/10_4_duration_extract.praat"><code>10_4_duration_extract.praat</code></a></td></tr>
+<tr><th scope="row">第11章</th><td>Script 11.1　日本語母音の一括測定<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vowel_extractor.praat"><code>vowel_extractor.praat</code></a></td></tr>
+<tr><th scope="row">第13章</th><td>Script 13.1　VOT連続体の生成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vot_continuum.praat"><code>vot_continuum.praat</code></a></td></tr>
+<tr><th scope="row">第15章</th><td>Script 15.1　制約付きランダム化<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/randomize_stimuli.praat"><code>randomize_stimuli.praat</code></a></td></tr>
+<tr><th scope="row">第15章</th><td>Script 15.4　ExperimentMFCの結果をR用CSVに変換<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/mfc_to_r.praat"><code>mfc_to_r.praat</code></a></td></tr>
+<tr><th scope="row">第16章</th><td>Script 16.2　母音空間図の作成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/vowel_space_plot.praat"><code>vowel_space_plot.praat</code></a></td></tr>
+<tr><th scope="row">第18章</th><td>Script 18.1　研究プロジェクトのフォルダ構成の生成<br><a href="https://github.com/labphonlab/praat-book-scripts/blob/main/book/create_research_project.praat"><code>create_research_project.praat</code></a></td></tr>
 </table>
 </section>
 
