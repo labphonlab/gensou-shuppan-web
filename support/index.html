@@ -3,7 +3,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>サポート｜言叢出版</title>
-<meta name="description" content="音声学ライブラリ各巻の動作環境・正誤表・更新履歴。">
+<meta name="description" content="音声学ライブラリ各巻の動作環境・配布物（スクリプト・Notebook・実習データ）・正誤表・更新履歴。">
+<link rel="canonical" href="https://labphonlab.github.io/gensou-shuppan-web/support/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="サポート｜言叢出版">
+<meta property="og:description" content="音声学ライブラリ各巻の動作環境・配布物・正誤表・更新履歴。">
+<meta property="og:url" content="https://labphonlab.github.io/gensou-shuppan-web/support/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
@@ -14,7 +19,17 @@
 <nav class="site"><a href="../onseigaku-library/">シリーズ</a><a href="../support/" aria-current="page">サポート</a></nav>
 </div></header>
 <main class="wrap"><h1>サポート</h1>
-<p class="lead">音声学ライブラリ各巻の動作環境・正誤表・更新履歴です。</p>
+<p class="lead">音声学ライブラリ各巻の動作環境・配布物・正誤表・更新履歴です。</p>
+<p class="updated">最終更新：2026年10月4日</p>
+<nav class="toc" aria-label="巻の一覧"><ol>
+<li><a href="#vol1"><span>第1巻</span>Praatで学ぶ音声研究の方法</a></li>
+<li><a href="#vol2"><span>第2巻</span>音声分析自動化マニュアル</a></li>
+<li><a href="#vol3"><span>第3巻</span>音声研究のための統計解析</a></li>
+<li><a href="#vol4"><span>第4巻</span>実験音韻論の方法</a></li>
+<li><a href="#vol5"><span>第5巻</span>言語音声の設計図</a></li>
+<li><a href="#vol6"><span>第6巻</span>相互行為音声学</a></li>
+<li><a href="#report"><span>報告</span>誤り・不具合の報告</a></li>
+</ol></nav>
 
 <div class="note">
 <b>コード・Notebookと実習素材の入手について</b><br>
@@ -23,61 +38,87 @@
 実習素材は、コードとは分けたZIPで提供します。購入者限定の素材はパスワード付きで、URLとパスワードは各書籍の巻末をご覧ください。
 </div>
 
+<section class="vol-support" id="vol1">
 <h2>第1巻　Praatで学ぶ音声研究の方法</h2>
 <table>
-<tr><th>動作環境</th><td>Praat 7.0.02（6.4.67でも動作を確認）</td></tr>
-<tr><th>公開スクリプト</th><td><a href="https://github.com/labphonlab/praat-book-scripts">GitHubリポジトリ（main）</a></td></tr>
-<tr><th>刊行時固定版</th><td><a href="https://github.com/labphonlab/praat-book-scripts/releases/tag/v1.0.3">v1.0.3 Release</a></td></tr>
-<tr><th>実習データ</th><td><a href="../dl/onseigaku-library-1-data.zip">実習データZIP</a>（合成音声・TextGrid、約27 MB、パスワードなし、CC BY 4.0）</td></tr>
+<tr><th scope="row">動作環境</th><td>Praat 7.0.02（6.4.67でも動作を確認）。Praatは<a href="https://praat.org">公式サイト</a>から入手できます</td></tr>
+<tr><th scope="row">公開スクリプト</th><td><a href="https://github.com/labphonlab/praat-book-scripts">GitHubリポジトリ（main）</a>。MIT License</td></tr>
+<tr><th scope="row">刊行時固定版</th><td><a href="https://github.com/labphonlab/praat-book-scripts/releases/tag/v1.0.3">v1.0.3 Release</a>（ZIPとSHA-256チェックサム）</td></tr>
+<tr><th scope="row">実習データ</th><td><a href="../dl/onseigaku-library-1-data.zip">実習データZIP</a>（合成音声・TextGrid、約27 MB、パスワードなし、CC BY 4.0）</td></tr>
 </table>
-<h3>配布物</h3><p style="font-size:14px">Praatスクリプトは公開GitHub、実習用の合成音声とTextGridは別のZIPで提供します。どちらも自由に入手できます。</p>
-<h3>正誤・既知の不具合</h3><p style="font-size:14px;color:var(--soft)">現時点で報告はありません。</p>
+<h3>配布物</h3>
+<p class="small">Praatスクリプトは公開GitHub、実習用の合成音声とTextGridは別のZIPで提供します。どちらも自由に入手できます。
+実習データZIPには、本書の付属データ（<code>test_data</code>・<code>jp_vowels</code>・<code>en_jp_stops</code>・<code>spontaneous_sample</code>・<code>batch_100files</code>・<code>stimuli</code>）が入っています。</p>
+<h3>更新履歴</h3>
+<table class="log">
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.3：書籍掲載スクリプト4本のPitch分析を、本書の標準である <code>To Pitch (filtered autocorrelation)</code> に統一</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.2：<code>f0_trajectory_plot.praat</code> の軸ラベルの「%」が表示されない不具合を修正</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>公開スクリプト v1.0.1：図版スクリプトのPicture windowの単位をインチに修正（cmとしていた）、書籍掲載スクリプトを本文と一致させ、ライセンス表記をMIT Licenseに統一</td></tr>
+<tr><th scope="row">2026年10月4日</th><td>実習データZIP：本書の付属データ6フォルダを収録して差し替え、パスワードを廃止（利用条件はCC BY 4.0）</td></tr>
+<tr><th scope="row">2026年9月27日</th><td>公開スクリプト v1.0.0：刊行時固定版を公開</td></tr>
+</table>
+<p class="fine">以前にダウンロードしたスクリプトやデータをお使いの場合は、最新版に置き換えてください。変更の詳細は、リポジトリの <a href="https://github.com/labphonlab/praat-book-scripts/blob/main/CHANGELOG.md">CHANGELOG.md</a> にあります。</p>
+<h3>正誤・既知の不具合</h3><p class="small muted">現時点で報告はありません。</p>
+</section>
+<section class="vol-support" id="vol2">
 <h2>第2巻　音声分析自動化マニュアル</h2>
 <table>
-<tr><th>動作環境</th><td>Google Colaboratory ＋ Parselmouth 0.4.7（内部の Praat は 6.x 系）</td></tr>
-<tr><th>公開Notebook</th><td><a href="https://github.com/labphonlab/speech-analysis-automation-notebooks">GitHubリポジトリ（main）</a></td></tr>
-<tr><th>刊行時固定版</th><td><a href="https://github.com/labphonlab/speech-analysis-automation-notebooks/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
-<tr><th>購入者向け素材</th><td>実習用合成音声・TextGrid。URLとパスワードは本書巻末に記載</td></tr>
+<tr><th scope="row">動作環境</th><td>Google Colaboratory ＋ Parselmouth 0.4.7（内部の Praat は 6.x 系）</td></tr>
+<tr><th scope="row">公開Notebook</th><td><a href="https://github.com/labphonlab/speech-analysis-automation-notebooks">GitHubリポジトリ（main）</a></td></tr>
+<tr><th scope="row">刊行時固定版</th><td><a href="https://github.com/labphonlab/speech-analysis-automation-notebooks/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
+<tr><th scope="row">購入者向け素材</th><td>実習用合成音声・TextGrid。URLとパスワードは本書巻末に記載</td></tr>
 </table>
-<h3>配布物</h3><p style="font-size:14px">Notebook 9本は公開GitHub、実習用データは別の購入者向けZIPで提供します。</p>
-<h3>正誤・既知の不具合</h3><table><tr><th>2026年2月版（初版）</th><td>本文中の章間リンクが機能しない。旧いファイル名を参照していたため、「第8章を参照」などのリンクが開けなかった（54箇所）。付録A〜Fへのリンクも、すべて付録の先頭に移動していた。</td></tr><tr><th>2026年2月版（初版）</th><td>電子版の表紙が 1057×1687 ピクセルで、推奨解像度 1600×2560 に足りていなかった。</td></tr></table><p style="font-size:13.5px;color:var(--soft)">いずれも2026年9月の更新版で修正しています。Kindleでお読みの場合、端末の同期で更新版に置き換わることがあります。</p>
+<h3>配布物</h3><p class="small">Notebook 9本は公開GitHub、実習用データは別の購入者向けZIPで提供します。</p>
+<h3>正誤・既知の不具合</h3><table><tr><th scope="row">2026年2月版（初版）</th><td>本文中の章間リンクが機能しない。旧いファイル名を参照していたため、「第8章を参照」などのリンクが開けなかった（54箇所）。付録A〜Fへのリンクも、すべて付録の先頭に移動していた。</td></tr><tr><th scope="row">2026年2月版（初版）</th><td>電子版の表紙が 1057×1687 ピクセルで、推奨解像度 1600×2560 に足りていなかった。</td></tr></table><p class="fine">いずれも2026年9月の更新版で修正しています。Kindleでお読みの場合、端末の同期で更新版に置き換わることがあります。</p>
+</section>
+<section class="vol-support" id="vol3">
 <h2>第3巻　音声研究のための統計解析</h2>
 <table>
-<tr><th>動作環境</th><td>Google Colaboratory の R ランタイム</td></tr>
-<tr><th>公開Notebook</th><td><a href="https://github.com/labphonlab/phonetics-research-statistics-support">GitHubリポジトリ（main）</a></td></tr>
-<tr><th>刊行時固定版</th><td><a href="https://github.com/labphonlab/phonetics-research-statistics-support/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
-<tr><th>購入者向け素材</th><td>なし</td></tr>
+<tr><th scope="row">動作環境</th><td>Google Colaboratory の R ランタイム</td></tr>
+<tr><th scope="row">公開Notebook</th><td><a href="https://github.com/labphonlab/phonetics-research-statistics-support">GitHubリポジトリ（main）</a></td></tr>
+<tr><th scope="row">刊行時固定版</th><td><a href="https://github.com/labphonlab/phonetics-research-statistics-support/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
+<tr><th scope="row">購入者向け素材</th><td>なし</td></tr>
 </table>
-<h3>配布物</h3><p style="font-size:14px">各章に対応するR Notebook 19本を公開GitHubで提供します。</p>
-<h3>Colabで開く（章ごと）</h3><p style="font-size:14px">リンクを押すとColab上でノートブックが開きます。開いたら「ランタイム」→「ランタイムのタイプを変更」でRに切り替えてください。</p><table><tr><th>全章統合版</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/00_all_in_one.ipynb">00_all_in_one.ipynb</a></td></tr><tr><th>第0章　Rの基礎</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch00_programming_primer.ipynb">ch00_programming_primer.ipynb</a></td></tr><tr><th>第1章　データ整形と可視化</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch01_data_wrangling_viz.ipynb">ch01_data_wrangling_viz.ipynb</a></td></tr><tr><th>第2章　記述統計</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch02_descriptive_stats.ipynb">ch02_descriptive_stats.ipynb</a></td></tr><tr><th>第3章　回帰と分散分析</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch03_regression_anova.ipynb">ch03_regression_anova.ipynb</a></td></tr><tr><th>第4章　対比コーディング</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch04_contrast_coding.ipynb">ch04_contrast_coding.ipynb</a></td></tr><tr><th>第5章　線形混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch05_linear_mixed_models.ipynb">ch05_linear_mixed_models.ipynb</a></td></tr><tr><th>第6章　一般化線形混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch06_glmm.ipynb">ch06_glmm.ipynb</a></td></tr><tr><th>第7章　一般化加法混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch07_gamm.ipynb">ch07_gamm.ipynb</a></td></tr><tr><th>第8章　ベイズ統計（brms）</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch08_bayesian_brms.ipynb">ch08_bayesian_brms.ipynb</a></td></tr><tr><th>第9章　多変量解析と関数データ解析</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch09_multivariate_fda.ipynb">ch09_multivariate_fda.ipynb</a></td></tr><tr><th>第10章　知覚実験（同定）</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch10_perception_identification.ipynb">ch10_perception_identification.ipynb</a></td></tr><tr><th>第11章　信号検出理論・順序回帰・反応時間</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch11_perception_sdt_ordinal_rt.ipynb">ch11_perception_sdt_ordinal_rt.ipynb</a></td></tr><tr><th>第12章　多重比較</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch12_multiple_comparisons.ipynb">ch12_multiple_comparisons.ipynb</a></td></tr><tr><th>第13章　検定力と標本サイズ</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch13_power_sample_size.ipynb">ch13_power_sample_size.ipynb</a></td></tr><tr><th>第14章　分類とクラスタリング</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch14_classification_clustering.ipynb">ch14_classification_clustering.ipynb</a></td></tr><tr><th>第15章　信頼性と欠測</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch15_reliability_missingness.ipynb">ch15_reliability_missingness.ipynb</a></td></tr><tr><th>第16章　報告と再現可能性</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch16_reporting_reproducibility.ipynb">ch16_reporting_reproducibility.ipynb</a></td></tr><tr><th>付録　targetsによるパイプライン</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/10_pipeline_targets.ipynb">10_pipeline_targets.ipynb</a></td></tr></table>
-<h3>正誤・既知の不具合</h3><p style="font-size:14px;color:var(--soft)">現時点で報告はありません。</p>
+<h3>配布物</h3><p class="small">各章に対応するR Notebook 19本を公開GitHubで提供します。</p>
+<h3>Colabで開く（章ごと）</h3><p class="small">リンクを押すとColab上でノートブックが開きます。開いたら「ランタイム」→「ランタイムのタイプを変更」でRに切り替えてください。</p><details><summary>章ごとのリンクを表示（全19本）</summary><table><tr><th scope="row">全章統合版</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/00_all_in_one.ipynb">00_all_in_one.ipynb</a></td></tr><tr><th scope="row">第0章　Rの基礎</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch00_programming_primer.ipynb">ch00_programming_primer.ipynb</a></td></tr><tr><th scope="row">第1章　データ整形と可視化</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch01_data_wrangling_viz.ipynb">ch01_data_wrangling_viz.ipynb</a></td></tr><tr><th scope="row">第2章　記述統計</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch02_descriptive_stats.ipynb">ch02_descriptive_stats.ipynb</a></td></tr><tr><th scope="row">第3章　回帰と分散分析</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch03_regression_anova.ipynb">ch03_regression_anova.ipynb</a></td></tr><tr><th scope="row">第4章　対比コーディング</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch04_contrast_coding.ipynb">ch04_contrast_coding.ipynb</a></td></tr><tr><th scope="row">第5章　線形混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch05_linear_mixed_models.ipynb">ch05_linear_mixed_models.ipynb</a></td></tr><tr><th scope="row">第6章　一般化線形混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch06_glmm.ipynb">ch06_glmm.ipynb</a></td></tr><tr><th scope="row">第7章　一般化加法混合モデル</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch07_gamm.ipynb">ch07_gamm.ipynb</a></td></tr><tr><th scope="row">第8章　ベイズ統計（brms）</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch08_bayesian_brms.ipynb">ch08_bayesian_brms.ipynb</a></td></tr><tr><th scope="row">第9章　多変量解析と関数データ解析</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch09_multivariate_fda.ipynb">ch09_multivariate_fda.ipynb</a></td></tr><tr><th scope="row">第10章　知覚実験（同定）</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch10_perception_identification.ipynb">ch10_perception_identification.ipynb</a></td></tr><tr><th scope="row">第11章　信号検出理論・順序回帰・反応時間</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch11_perception_sdt_ordinal_rt.ipynb">ch11_perception_sdt_ordinal_rt.ipynb</a></td></tr><tr><th scope="row">第12章　多重比較</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch12_multiple_comparisons.ipynb">ch12_multiple_comparisons.ipynb</a></td></tr><tr><th scope="row">第13章　検定力と標本サイズ</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch13_power_sample_size.ipynb">ch13_power_sample_size.ipynb</a></td></tr><tr><th scope="row">第14章　分類とクラスタリング</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch14_classification_clustering.ipynb">ch14_classification_clustering.ipynb</a></td></tr><tr><th scope="row">第15章　信頼性と欠測</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch15_reliability_missingness.ipynb">ch15_reliability_missingness.ipynb</a></td></tr><tr><th scope="row">第16章　報告と再現可能性</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/ch16_reporting_reproducibility.ipynb">ch16_reporting_reproducibility.ipynb</a></td></tr><tr><th scope="row">付録　targetsによるパイプライン</th><td><a href="https://colab.research.google.com/github/labphonlab/phonetics-research-statistics-support/blob/main/notebooks/10_pipeline_targets.ipynb">10_pipeline_targets.ipynb</a></td></tr></table></details>
+<h3>正誤・既知の不具合</h3><p class="small muted">現時点で報告はありません。</p>
+</section>
+<section class="vol-support" id="vol4">
 <h2>第4巻　実験音韻論の方法</h2>
 <table>
-<tr><th>動作環境</th><td>Praat 7.0.02 ＋ R</td></tr>
-<tr><th>公開Notebook</th><td><a href="https://github.com/labphonlab/jikken-onin-ron-support">GitHubリポジトリ（main）</a></td></tr>
-<tr><th>刊行時固定版</th><td><a href="https://github.com/labphonlab/jikken-onin-ron-support/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
-<tr><th>購入者向け素材</th><td>なし</td></tr>
+<tr><th scope="row">動作環境</th><td>Praat 7.0.02 ＋ R</td></tr>
+<tr><th scope="row">公開Notebook</th><td><a href="https://github.com/labphonlab/jikken-onin-ron-support">GitHubリポジトリ（main）</a></td></tr>
+<tr><th scope="row">刊行時固定版</th><td><a href="https://github.com/labphonlab/jikken-onin-ron-support/releases/tag/v1.0.0">v1.0.0 Release</a></td></tr>
+<tr><th scope="row">購入者向け素材</th><td>なし</td></tr>
 </table>
 
-<h3>正誤・既知の不具合</h3><p style="font-size:14px;color:var(--soft)">現時点で報告はありません。</p>
+<h3>正誤・既知の不具合</h3><p class="small muted">現時点で報告はありません。</p>
+</section>
+<section class="vol-support" id="vol5">
 <h2>第5巻　言語音声の設計図</h2>
-<table><tr><th>動作環境</th><td>—</td></tr></table>
+<table><tr><th scope="row">動作環境</th><td>—</td></tr></table>
 
-<h3>正誤・既知の不具合</h3><table><tr><th>初版</th><td>電子版に図版4点（調音位置図・母音空間図・子音目録分布・母音体系分布）が含まれていなかった。PDF形式で参照していたため、EPUBでは表示できなかった。</td></tr></table><p style="font-size:13.5px;color:var(--soft)">いずれも2026年9月の更新版で修正しています。Kindleでお読みの場合、端末の同期で更新版に置き換わることがあります。</p>
+<h3>正誤・既知の不具合</h3><table><tr><th scope="row">初版</th><td>電子版に図版4点（調音位置図・母音空間図・子音目録分布・母音体系分布）が含まれていなかった。PDF形式で参照していたため、EPUBでは表示できなかった。</td></tr></table><p class="fine">いずれも2026年9月の更新版で修正しています。Kindleでお読みの場合、端末の同期で更新版に置き換わることがあります。</p>
+</section>
+<section class="vol-support" id="vol6">
 <h2>第6巻　相互行為音声学</h2>
-<table><tr><th>動作環境</th><td>—</td></tr></table>
+<table><tr><th scope="row">動作環境</th><td>—</td></tr></table>
 
-<h3>正誤・既知の不具合</h3><p style="font-size:14px;color:var(--soft)">現時点で報告はありません。</p>
+<h3>正誤・既知の不具合</h3><p class="small muted">現時点で報告はありません。</p>
+</section>
 
-
-<h2>不具合の報告</h2>
+<section class="vol-support" id="report">
+<h2>誤り・不具合の報告</h2>
 <p>本文の誤り、コードが動かない、配布物が開けないなどがありましたら、
-各書籍の奥付に記載の連絡先までお知らせください。
+<a href="https://forms.gle/1TBzQpmQDeLTYmTi7">お問い合わせフォーム</a>からお知らせください（各書籍の奥付に記載の連絡先と同じです）。
 確認のうえ、このページに掲載し、次の更新版で修正します。</p>
 
-<p style="font-size:13.5px;color:var(--soft)">
+<p class="fine">
 報告の際は、書名・版（奥付の初版年月）・該当箇所（章と節、または画面の記載）を
 お書き添えいただけると確認が早くなります。</p>
+</section>
+
+</main>
 
 <footer class="site"><div class="wrap">
 言叢出版 — 音声学ライブラリ<br>
